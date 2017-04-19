@@ -1,0 +1,19 @@
+#calc-container {
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  border: 50px;
+  background-color: red; }
+  #calc-container form #answer {
+    display: inline-block;
+    height: 50px;
+    width: 200px; }
+  #calc-container form .num {
+    float: left;
+    display: inline-block;
+    height: 50px;
+    width: 50px; }
+  #calc-container form #equals {
+    width: 200px; }
+
+/*# sourceMappingURL=output.css.map */

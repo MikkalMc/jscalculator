@@ -1,13 +1,23 @@
 #calc-container {
-	width: 150px;
+	width: 200px;
 	height: 100px;
 	margin: auto;
+	border: 50px;
+	background-color: red;
 	form {
+		#answer {
+			display: inline-block;
+			height: 50px;
+			width: 200px;
+		}
 		.num {
 			float: left;
 			display: inline-block;
 			height: 50px;
 			width: 50px;
+		}
+		#equals {
+			width: 200px;
 		}
 	}
 }

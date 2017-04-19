@@ -10,6 +10,7 @@ var totalNum = 0;
 		document.getElementById('answer').value = text;
 	}
 
-	function evaluate() {
-		eval(document.getElementById('answer').value);
+	function evaluateCalc() {
+		document.getElementById('answer').value = eval(document.getElementById('answer').value);
+		
 	}

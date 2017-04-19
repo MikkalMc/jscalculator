@@ -3,26 +3,32 @@
 <head>
 	<title>JavaScript Calculator</title>
 	<link rel="stylesheet" href="public/output.css">
+	<script src="./scripts.js"></script>
+
 </head>
 <body>
 	<div id="calc-container">
 		<form name="calculator">
-			<input type="text" name="total">
+			<input type="text" id="answer" name="total">
 			<br>
-			<input type="button" value=" 1 " class="num" onclick="calculator.total.value += '1'">
-			<input type="button" value=" 2 " class="num" onclick="calculator.total.value += '2'">
-			<input type="button" value=" 3 " class="num" onclick="calculator.total.value += '3'">
-			<input type="button" value=" 4 " class="num" onclick="calculator.total.value += '4'">
-			<input type="button" value=" 5 " class="num" onclick="calculator.total.value += '5'">
-			<input type="button" value=" 6 " class="num" onclick="calculator.total.value += '6'">
-			<input type="button" value=" 7 " class="num" onclick="calculator.total.value += '7'">
-			<input type="button" value=" 8 " class="num" onclick="calculator.total.value += '8'">
-			<input type="button" value=" 9 " class="num" onclick="calculator.total.value += '9'">
-			<input type="button" value=" C " class="num">
-			<input type="button" value=" 0 " class="num" onclick="calculator.total.value += '0'">
-			<input type="button" value=" AC " class="num">
+			<input type="button" value="1" class="num" onclick="calculator.total.value += '1'">
+			<input type="button" value="2" class="num" onclick="calculator.total.value += '2'">
+			<input type="button" value="3" class="num" onclick="calculator.total.value += '3'">
+			<input type="button" value="+" class="num" onclick="calculator.total.value += '+'">
+			<input type="button" value="4" class="num" onclick="calculator.total.value += '4'">
+			<input type="button" value="5" class="num" onclick="calculator.total.value += '5'">
+			<input type="button" value="6" class="num" onclick="calculator.total.value += '6'">
+			<input type="button" value="-" class="num" onclick="calculator.total.value += '-'">
+			<input type="button" value="7" class="num" onclick="calculator.total.value += '7'">
+			<input type="button" value="8" class="num" onclick="calculator.total.value += '8'">
+			<input type="button" value="9" class="num" onclick="calculator.total.value += '9'">
+			<input type="button" value="x" class="num" onclick="calculator.total.value += '*'">
+			<input type="button" value="C" class="num" id="clear" onclick="clearAnswer();">
+			<input type="button" value="0" class="num" onclick="calculator.total.value += '0'">
+			<input type="button" value="BS" class="num" id="backspace" onclick="backSpace();">
+			<input type="button" value="/" class="num" onclick="calculator.total.value += '/'">
+			<input type="button" value="=" class="num" id="equals" onclick="evaluateCalc()">
 		</form>
 	</div>
-	<script src="scripts.js"></script>
 </body>
 </html>
